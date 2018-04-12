@@ -289,6 +289,7 @@ filtering the data submitted by the user
 _ _ _
 
 ####Appendix 1
+
 **[6] Web Site physical path leakage Vulnerability**
 
 the following links can get the absolute path to the site

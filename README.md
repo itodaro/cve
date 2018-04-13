@@ -17,24 +17,9 @@
 _ _ _
 
 **Environment: **
+apache/php 7.0.12/cms made simple 2.2.6 and cms made simple 2.2.7(**update**)
 
-	apache/php 5.4.45/cms made simple 2.2.6
 
-**Explanation:**
-
-the latest version is **2.2.7**, but there is a problem in the source code, so this version of cms made simple can not work correctly after installation!
-
-In the version 2.2.7 of \lib\classes\internal\class.LoginOperations.php
-```
-$private_data['hash'] = password_hash( $user->id.$user->password.__FILE__, PASSWORD_BCRYPT );
-```
-But the function password_hash is not defined
-
-enter the account password when logging in the admin dashboard will show this：
-![1.png](./img/1.png)
-and you can not find the password_hash function
-![2.png](./img/2.png)
-**so this 2.2.7 newest version is equal to the unavailable version!**
 _ _ _
 **[1]Admin password reset vulnerability (<=2.2.6)**
 
@@ -148,7 +133,7 @@ line 117 gets the value of ```$_COOKIE[$this->_loginkey]``` by deserialization
 
 ![20.png](./img/20.png)
 
-on line 125, the _check_passhash function is called to verify the uid and cksum values in the data
+on line 125, the _check_passhash function is called to verify the ```id``` and ```cksum``` values in the data
 
 in the _check_passhash function
 

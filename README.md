@@ -2,17 +2,17 @@
 
 ####General description：
 
-**[1]CMS Made Simple (CMSMS) <=2.2.6 contains admin password reset vulnerability**
+**[1]CMS Made Simple (CMSMS) <=2.2.6 contains admin password reset vulnerability(CVE-2018-10081)**
 
-**[2]CMS Made Simple (CMSMS) <=2.2.6 contains PHP object injection**
+**[2]CMS Made Simple (CMSMS) <=2.2.6 contains PHP object injection(CVE-2018-10085)**
 
-**[3]CMS Made Simple (CMSMS) <=2.2.6 contains the privilege escalation vulnerability from ordinary user to admin user**
+**[3]CMS Made Simple (CMSMS) <=2.2.6 contains the privilege escalation vulnerability from ordinary user to admin user(CVE-2018-10084)**
 
-**[4]CMS Made Simple (CMSMS) <=2.2.7 contains arbitrary code execution vulnerability in the admin dashboard**
+**[4]CMS Made Simple (CMSMS) <=2.2.7 contains arbitrary code execution vulnerability in the admin dashboard(CVE-2018-10086)**
 
-**[5]CMS Made Simple (CMSMS) <=2.2.7 contains any file deletion vulnerability in the admin dashboard**
+**[5]CMS Made Simple (CMSMS) <=2.2.7 contains any file deletion vulnerability in the admin dashboard(CVE-2018-10083)**
 
-**[6]CMS Made Simple (CMSMS) <=2.2.7 contains web Site physical path leakage Vulnerability**
+**[6]CMS Made Simple (CMSMS) <=2.2.7 contains web Site physical path leakage Vulnerability(CVE-2018-10082)**
 
 _ _ _
 
